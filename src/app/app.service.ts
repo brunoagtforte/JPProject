@@ -7,7 +7,7 @@ export class DataService {
   constructor(private http: HttpClient) {}
   getData() {
     return this.http.get<Data[]>(
-      'https://jsonplaceholder.typicode.com/photos'
+      'https://my-json-server.typicode.com/brunoagtforte/JPProject/db'
     );
   }
 }

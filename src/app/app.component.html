@@ -1,1 +1,24 @@
-<h1>hello</h1>
+<p-table [value]="tabela_cobertura" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+      <tr>
+          <th></th>
+          <th></th>
+          <th>un.</th>
+          <th>Q1'22</th>
+          <th>Q2'22</th>
+          <th>Q3'22</th>
+          <th>Q4'22</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+      <tr>
+          <td></td>
+          <td>{{tabela_cobertura.values}}</td>
+          <td>{{tabela_cobertura.values}}</td>
+          <td>{{tabela_cobertura.values}}</td>
+          <td>{{tabela_cobertura.values}}</td>
+          <td>{{tabela_cobertura.values}}</td>
+          <td>{{tabela_cobertura.values}}</td>
+      </tr>
+  </ng-template>
+</p-table>
