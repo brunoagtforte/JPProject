@@ -14,12 +14,16 @@ export class AppComponent {
   ngOnInit() {
     this.DataService.getData().subscribe(data => {
       this.tabela_cobertura = data;
-      console.log(data)
+      console.log(data.values)
+      //can't read arrays inside obj fill the table
       }
     );
   }
 }
 
+// Solution
+//https://stackoverflow.com/questions/57086672/element-implicitly-has-an-any-type-because-expression-of-type-string-cant-b
+//https://cursos.alura.com.br/forum/topico-error-trying-to-diff-object-object-only-arrays-and-iterables-are-allowed-79462
 export interface Data {
   header1: string,
   header2: string,
